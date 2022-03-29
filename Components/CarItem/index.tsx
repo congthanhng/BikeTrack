@@ -1,6 +1,5 @@
 import { StatusBar, View, Text, SafeAreaView } from 'react-native'
-import React from 'react'
-import styles from './styles'
+ import styles from './styles'
 import tw from 'twrnc'
 
 export default function CarItem() {
