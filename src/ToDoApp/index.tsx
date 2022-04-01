@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  KeyboardAvoidingView,
-  StyleSheet,
   Text,
   View,
   TextInput,
   TouchableOpacity,
-  Keyboard,
   ScrollView,
 } from "react-native";
-import store from "../Redux/store";
-import Task from "./../components/Task";
-import * as taskActions from "../ReDux/actions";
+import Task from "../components/Task";
+import * as taskActions from "../Redux/actions";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import styles from "./style";
 
 let valueChange = "";
 
-class ToDo extends React.Component {
+class ToDoApp extends React.Component {
   addTask() {
     let { tasks, actions } = this.props;
     actions.taskAdded(valueChange);
@@ -99,4 +95,4 @@ const mapDispatchToProps = (dispatch) => ({
   actions: bindActionCreators(ActionCreators, dispatch),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ToDo);
+export default connect(mapStateToProps, mapDispatchToProps)(ToDoApp);
