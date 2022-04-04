@@ -87,7 +87,7 @@ class ToDoApp extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  tasks: state.todo,
+  tasks: state.tasks,
 });
 
 const ActionCreators = Object.assign({}, taskActions);
