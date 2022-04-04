@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "../../ToDoApp/style";
 import { useSelector } from "react-redux";
-import { selectTasks, taskRemoved, taskToggled } from "../tasksSlice";
+import { selectTasks, taskRemoved, taskToggled } from "../slices/tasksSlice";
 import { useAppDispatch } from "../hooks";
 
 export default function TaskList() {

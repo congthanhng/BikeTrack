@@ -16,9 +16,9 @@ import {
   taskCompleted,
   taskRemoved,
   taskToggled,
-} from "./tasksSlice";
+} from "./slices/tasksSlice";
 import { useAppDispatch } from "./hooks";
-import { selectInput, textChanged } from "./inputSlice";
+import { selectInput, textChanged } from "./slices/inputSlice";
 import TaskList from "./Components/TaskList";
 // import { taskToggled } from "./taskSlice";
 
