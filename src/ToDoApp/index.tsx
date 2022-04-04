@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
-import Task from "../components/Task";
+import Task from "../Components/Task";
 import * as taskActions from "../Redux/actions";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";

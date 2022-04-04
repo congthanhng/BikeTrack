@@ -1,4 +1,4 @@
-import * as actionType from '../Redux/actionTypes';
+import * as actionType from './actionTypes';
 
 
 export const taskAdded = description => ({
