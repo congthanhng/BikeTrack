@@ -7,7 +7,7 @@ import {toolKitStore} from "./src/ReduxToolKit/redux/store"
 import { ReduxToolKitApp } from "./src/ReduxToolKit/ReduxToolKitApp";
 
 
-const store = todoStore();
+// const store = todoStore();
 
 // export default function App() {
 //   const unsubscribe = store.subscribe(() => {
