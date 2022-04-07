@@ -8,6 +8,8 @@ import {toolKitStore} from "./src/ReduxToolKit/redux/store"
 import { ReduxToolKitApp } from "./src/ReduxToolKit/ReduxToolKitApp";
 import ReduxToolKitNormalizApp from "./src/ReduxToolKitNormaliz";
 import { toolKitNormalizStore } from "./src/ReduxToolKitNormaliz/redux/store";
+import { toolKitNormalizMiddlewareStore } from "./src/ReduxToolKitNormalizMiddleware/redux/store";
+import ReduxToolKitNormalizMiddlwareApp from "./src/ReduxToolKitNormalizMiddleware";
 
 
 // const store = todoStore();
@@ -35,14 +37,27 @@ import { toolKitNormalizStore } from "./src/ReduxToolKitNormaliz/redux/store";
 //   );
 // }
 
+// export default function App() {
+//   // const unsubscribe = toolKitNormalizStore.subscribe(() => {
+//   //   console.log(toolKitNormalizStore.getState());
+//   // });
+
+//   return (
+//     <Provider store={toolKitNormalizStore}>
+//       <ReduxToolKitNormalizApp />
+//     </Provider>
+//   );
+// }
+
+
 export default function App() {
   // const unsubscribe = toolKitNormalizStore.subscribe(() => {
   //   console.log(toolKitNormalizStore.getState());
   // });
-
+  
   return (
-    <Provider store={toolKitNormalizStore}>
-      <ReduxToolKitNormalizApp />
+    <Provider store={toolKitNormalizMiddlewareStore}>
+      <ReduxToolKitNormalizMiddlwareApp />
     </Provider>
   );
 }
