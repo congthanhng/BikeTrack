@@ -23,7 +23,7 @@ export const ReduxToolKitApp = () => {
       >
         {/* Today's Tasks */}
         <View style={styles.tasksWrapper}>
-          <Text style={styles.sectionTitle}>Today's tasks</Text>
+          <Text style={styles.sectionTitle}>Today`s tasks</Text>
           <TaskList />
         </View>
       </ScrollView>
