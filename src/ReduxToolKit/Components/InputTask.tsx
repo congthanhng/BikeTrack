@@ -20,7 +20,7 @@ const InputTask = () => {
           defaultValue={input}
         />
         <TouchableOpacity
-          onPress={() => dispatch(taskAdded({ description: input }))}
+          onPress={() => dispatch(taskAdded(input))}
         >
           <View style={styles.addWrapper}>
             <Text style={styles.addText}>+</Text>

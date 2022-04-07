@@ -6,6 +6,7 @@ const initialState = [
   { id: 2, description: "Build something fun!", completed: false },
 ];
 
+let incrementIndex = 0;
 export default function taskReducer(state = initialState, action) {
   switch (action.type) {
     case actionType.TASK_ADDED: {

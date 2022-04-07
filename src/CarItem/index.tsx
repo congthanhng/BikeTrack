@@ -18,7 +18,6 @@ export default function CarItem() {
     <div>
       Value: {counter} <button onClick={increment}>Increment</button>
     </div>
-    
   )
 }
 

@@ -4,12 +4,13 @@ import styles from "../../ToDoApp/style";
 import { useSelector } from "react-redux";
 import TaskListItem from "./TaskListItem";
 import { selectTaskList } from "../redux/features/tasks/tasksHooks";
+import { TaskState } from "../redux/features/tasks/tasksSlice";
 
 export default function TaskList() {
   const tasks = useSelector(selectTaskList);
   console.log("TaskList rebuild", tasks);
 
-  const renderedListItems = tasks.map((task) => {
+  const renderedListItems = tasks.map((task:TaskState) => {
     return <TaskListItem key={task.id} id={task.id} task={task} />;
   });
 

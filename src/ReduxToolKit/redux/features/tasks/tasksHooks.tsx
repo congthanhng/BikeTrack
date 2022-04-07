@@ -1,6 +1,6 @@
 import { RootState } from "../../store";
 
-export const selectTaskList = (state) => state.tasks;
+export const selectTaskList = (state:RootState) => state.tasks;
 
 
 // export const selectTasks = createSelector(selectTaskList, (tasks) => Object.values(tasks))
