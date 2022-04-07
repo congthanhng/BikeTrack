@@ -1,8 +1,8 @@
 import {Text, SafeAreaView } from 'react-native'
 import tw from 'twrnc'
 import React , { useState } from 'react';
-import store from '../Redux/store';
-import { taskAdded, taskRemoved, taskCompleted } from '../Redux/actions';
+import store from '../ToDoApp/Redux/store';
+import { taskAdded, taskRemoved, taskCompleted } from '../ToDoApp/Redux/actions';
 import { Provider } from 'react-redux';
 
 export default function CarItem() {

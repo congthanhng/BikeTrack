@@ -1,5 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../store";
+import { createSelector } from "reselect";
+
 
 // Define the initial state using that type
 const initialState = [
@@ -35,9 +37,27 @@ export const tasksSlice = createSlice({
     },
   },
 });
+// const selectTodoEntities = (state) => state.tasks;
+
+
+export const selectTaskList = (state) => state.tasks;
+
+// export const selectTasks = createSelector(selectTaskList, (tasks) => Object.values(tasks))
+
+// export const selectTaskIds = createSelector(
+//   selectTaskList,
+//   (tasks) => tasks.map(task => task.id)
+// )
+
+// export const selectTaskById = (id) => createSelector(
+//   selectTaskList,
+//   (tasks)=> tasks[id]
+// )
+
+
 export const { taskAdded, taskRemoved, taskCompleted, taskToggled } =
   tasksSlice.actions;
 // Other code such as selectors can use the imported `RootState` type
-export const selectTasks = (state: RootState) => state.tasks;
+
 
 export default tasksSlice.reducer;

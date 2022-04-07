@@ -3,7 +3,7 @@ import taskReducer from "./reducer";
 import { createStore, combineReducers } from "redux";
 
 const rootReducer = combineReducers({ tasks: taskReducer });
-const configureStore = () => {
+const todoStore = () => {
   return createStore(rootReducer);
 };
-export default configureStore;
+export default todoStore;
