@@ -40,7 +40,7 @@ export default function TodayWeather() {
     return (
         <View style={styles.item}>
             <Text style={styles.sectionTitle}>Today</Text>
-            <Text>{content}</Text>
+            {content}
         </View>
     )
 }
