@@ -1,9 +1,9 @@
 import React from "react";
 import { Provider } from "react-redux";
-import todoStore from "./src/ToDoApp/Redux/store";
+import todoStore from "./src/ToDoApp/redux/store";
 import ToDoApp from "./src/ToDoApp";
 import { AppRegistry } from 'react-native';
-import {toolKitStore} from "./src/ReduxToolKit/store"
+import {toolKitStore} from "./src/ReduxToolKit/redux/store"
 import { ReduxToolKitApp } from "./src/ReduxToolKit/ReduxToolKitApp";
 
 

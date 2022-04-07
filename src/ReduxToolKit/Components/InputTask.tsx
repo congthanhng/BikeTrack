@@ -2,9 +2,10 @@ import { View, Text,TextInput,TouchableOpacity } from 'react-native'
 import React from 'react'
 import styles from '../../ToDoApp/style';
 import { useSelector } from 'react-redux';
-import { useAppDispatch } from '../hooks';
-import { selectInput, textChanged } from '../slices/inputSlice';
-import { taskAdded } from '../slices/tasksSlice';
+import { useAppDispatch } from '../redux/hooks';
+import { textChanged } from '../redux/features/input/inputSlice';
+import { taskAdded } from '../redux/features/tasks/tasksSlice';
+import { selectInput } from '../redux/features/input/inputHooks';
 
 const InputTask = () => {
     const input = useSelector(selectInput);

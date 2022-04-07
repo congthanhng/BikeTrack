@@ -5,8 +5,8 @@ import {
   View,
   ScrollView,
 } from "react-native";
-import TaskList from "./Components/TaskList";
-import InputTask from "./Components/InputTask";
+import TaskList from "./components/TaskList";
+import InputTask from "./components/InputTask";
 
 // import { taskToggled } from "./taskSlice";
 

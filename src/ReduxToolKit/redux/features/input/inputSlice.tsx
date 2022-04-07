@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { RootState } from "../store";
+
 
 export const inputSlice = createSlice({
   name: "input",
@@ -13,6 +13,5 @@ export const inputSlice = createSlice({
 
 export const { textChanged } =inputSlice.actions;
 // Other code such as selectors can use the imported `RootState` type
-export const selectInput = (state: RootState) => state.input;
 
 export default inputSlice.reducer;

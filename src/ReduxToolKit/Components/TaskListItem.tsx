@@ -1,19 +1,18 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
-import { useAppDispatch } from "../hooks";
+import { useAppDispatch } from "../redux/hooks";
 import styles from "../../ToDoApp/style";
-import { taskToggled, taskRemoved, selectTaskById } from "../slices/tasksSlice";
+import { taskToggled, taskRemoved } from "../redux/features/tasks/tasksSlice";
 import { useSelector } from "react-redux";
+import { selectTaskList } from "../redux/features/tasks/tasksHooks";
 
-const TaskListItem = ({id,task}) => {
-//   const task = useSelector(selectTaskById(id));
+const TaskListItem = ({ id, task }) => {
+  //   const task = useSelector(selectTaskById(id));
   const dispatch = useAppDispatch();
 
   console.log("rebuild item:", id);
   return (
-    <TouchableOpacity
-      onPress={() => dispatch(taskToggled({ id: task.id }))}
-    >
+    <TouchableOpacity onPress={() => dispatch(taskToggled({ id: task.id }))}>
       <View style={styles.item}>
         <View style={styles.itemLeft}>
           <View style={styles.square}></View>
@@ -30,13 +29,7 @@ const TaskListItem = ({id,task}) => {
             <Text style={styles.addText}>Remove</Text>
           </View>
         </TouchableOpacity>
-        {/* <View style={styles.circular}></View> */}
       </View>
-      {/* <Task
-                  text={item.description}
-                  isCompleted={item.completed}
-                  removeTask={() => dispatch(taskRemoved({ id: item.id }))}
-                /> */}
     </TouchableOpacity>
   );
 };
