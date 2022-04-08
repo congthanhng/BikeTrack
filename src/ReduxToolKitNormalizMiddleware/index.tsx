@@ -6,7 +6,7 @@ import InputTask from './components/InputTask';
 import TodayWeather from './components/TodayWeather';
 import { useAppDispatch } from './redux/hooks';
 import { exampleThunkFunction } from './redux/middleware';
-import { getMoviesFromApi } from '../api/client';
+import { getWeatherFromApi } from '../api/client';
 
 
 export default function ReduxToolKitNormalizMiddlwareApp() {

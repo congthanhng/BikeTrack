@@ -6,9 +6,6 @@ import { loggerMiddleware } from "./middleware";
 import { applyMiddleware } from "redux";
 
 
-const middlewareEnhancer = applyMiddleware(loggerMiddleware)
-
-
 export const toolKitNormalizMiddlewareStore = configureStore({
     reducer: {
         tasks: tasksReducer,

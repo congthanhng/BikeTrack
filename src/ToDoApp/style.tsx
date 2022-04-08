@@ -10,6 +10,15 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginBottom: 20,
   },
+  itemGreen: {
+    backgroundColor: "#00cc00",
+    padding: 15,
+    borderRadius: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 20,
+  },
   itemLeft: {
     flexDirection: "row",
     alignItems: "center",
